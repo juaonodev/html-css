@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: rgb(255, 0, 212);
+            text-decoration: none;
+            font-weight: bold;   
+        }
+        
+        
+        a:visited {
+            color: rgb(130, 5, 155);
+        }
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: rgb(216, 206, 111);
+        }
+
+        .especial {
+            background-color: rgba(137, 43, 226, 0.384);
+        }
+
+        .especial::after {
+            color: black;
+            content: ' [link]';
+        }
+        
+        .especial::before {
+            color: black;
+            content: '[link] '
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a target="_blank" href="https://github.com/juaonodev">Repositório GitHub</a></li>
+
+        <li><a target="_blank" href="https://www.youtube.com/@juaonodev" class="especial">Canal do Youtube</a></li>
+
+        <li><a target="blank" href="https://www.instagram.com/juaonodev/">Instagram</a></li>
+    </ul>
+</body>
+</html>
