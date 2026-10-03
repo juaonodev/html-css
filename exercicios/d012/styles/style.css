@@ -14,6 +14,9 @@
     padding: 0px;
 }
 
+a:hover{
+    text-decoration: underline;
+}
 header{
     background-color: black;
     color:white;
@@ -43,10 +46,6 @@ header > p > a{
     
 }
 
-.link1 a:houver{
-    text-decoration: underline;
-}
-
 .art1 > p{
     font-family: var(--fonte-principal);
     font-size: 3.5vw;
@@ -54,7 +53,7 @@ header > p > a{
     margin: 10vh 3vh 20vh 3vh ; 
     line-height: 2;
     
-}
+    }
 
 .img1{
     background-image: url(/exercicios/d012/imagens/background001.jpg); 
@@ -62,7 +61,7 @@ header > p > a{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 60vw;
+    height: 69vw;
     position: relative;
 }
 
@@ -78,8 +77,6 @@ header > p > a{
     
 }
 
-
-
 .art2 > p{
     font-family: var(--fonte-principal);
     font-size: 3.5vw;
@@ -91,12 +88,13 @@ header > p > a{
 
 .img2{
     background-image: url(/exercicios/d012/imagens/background002.jpg); 
-    background-position: center right;
+    background-position: center left;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 60vw;
+    height: 69vw;
     position: relative;
+    
 }
 
 .img2 > p{
@@ -118,4 +116,22 @@ header > p > a{
     margin: 10vh 3vh 20vh 3vh ; 
     line-height: 2;
     
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+}
+
+.link2{
+    text-decoration: none;
+    color: white;
+}
+
+.link3 {
+    text-decoration: none;
+    color: white;
 }
