@@ -15,8 +15,16 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
+        thead > tr > th{
+            position: sticky; /* EFEITO FIXAR TR E TH NA HORA QUE ROLAR A TABELA */
+            top: -1px;
+            background-color: rgb(61, 61, 61);
+            
+
+        }
         
         th, td{
             border: 1px solid black;
@@ -36,9 +44,15 @@
         }
 
         thead, tfoot{
-            background-color: gray;
+            background-color:  rgb(61, 61, 61); 
             color: white;
         }
+
+        tbody > tr:nth-child(even){
+            background-color: rgba(128, 128, 128, 0.555);
+        }
+
+
     </style>
 
 <body>
@@ -63,8 +77,8 @@
 
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -121,10 +135,118 @@
                <td>Amazonas</td>
                <td class="numero">4.360.926</td>
             </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.360.926</td>
+            </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.360.926</td>
+            </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.360.926</td>
+            </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.360.926</td>
+            </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.360.926</td>
+            </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.360.926</td>
+            </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.360.926</td>
+            </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.360.926</td>
+            </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.360.926</td>
+            </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.360.926</td>
+            </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.360.926</td>
+            </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.360.926</td>
+            </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.360.926</td>
+            </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.360.926</td>
+            </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.360.926</td>
+            </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.360.926</td>
+            </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.360.926</td>
+            </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.360.926</td>
+            </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.360.926</td>
+            </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.360.926</td>
+            </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.360.926</td>
+            </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.360.926</td>
+            </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.360.926</td>
+            </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.360.926</td>
+            </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.360.926</td>
+            </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.360.926</td>
+            </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.360.926</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="numero"><strong>177.263.139</strong></td>
             </tr>
         </tfoot>
