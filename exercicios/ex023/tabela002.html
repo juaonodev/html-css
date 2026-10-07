@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+            
+        }
+
+        td.numero{
+            text-align: right;
+        }
+
+        thead, tfoot{
+            background-color: gray;
+            color: white;
+        }
+    </style>
+
+<body>
+    <h1>
+        Uso de tabelas grandes
+    <!-- 
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            THEAD
+                TR, TD, TH    
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+
+    </h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="numero">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="numero">21.168.791</td>
+            </tr>   
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="numero">17.264.943</td>
+               
+            </tr>
+            <tr>
+               <td>Bahia</td>
+               <td class="numero">14.889.472</td>
+            </tr>
+            <tr>
+               <td>Paraná</td>
+               <td class="numero">11.952.561</td>
+            </tr>
+            <tr>
+               <td>Rio Grande do Sul</td>
+               <td class="numero">11.233.317</td>
+            </tr>
+            <tr>
+               <td>Pernambuco</td>
+               <td class="numero">9.583.176</td>
+            </tr>
+            <tr>
+               <td>Ceará</td>
+               <td class="numero">9.302.211</td>
+            </tr>
+            <tr>
+               <td>Pará</td>
+               <td class="numero">8.756.324</td>
+            </tr>
+            <tr>
+               <td>Santa Catarina</td>
+               <td class="numero">8.312.759</td>
+            </tr>
+            <tr>
+               <td>Goiás</td>
+               <td class="numero">7.495.033</td>
+            </tr>
+            <tr>
+               <td>Maranhão</td>
+               <td class="numero">7.024.557</td>
+            </tr>
+            <tr>
+               <td>Amazonas</td>
+               <td class="numero">4.360.926</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de Habitantes</th>
+                <td class="numero"><strong>177.263.139</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
