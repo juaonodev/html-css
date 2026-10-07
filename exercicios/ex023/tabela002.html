@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
 </head>
     <style>
+
         body{
             font-family: Arial, Helvetica, sans-serif;
 
@@ -16,10 +17,18 @@
             border-collapse: collapse;
         }
 
+        
         th, td{
             border: 1px solid black;
             padding: 10px;
             
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgrey;
         }
 
         td.numero{
@@ -38,17 +47,20 @@
     <!-- 
         ANATOMIA PARA TABELAS GRANDES
         TABLE
-            THEAD
+            CAPITION (LEGENDA DA TABELA)
+            THEAD (CABEÇA DA TABELA)
                 TR, TD, TH    
-            TBODY
+            TBODY(CORPO DA TABELA)
                 TR, TD, TH
-            TFOOT
+            TFOOT(RODAPÉ DA TABELA)
                 TR, TD, TH
     -->
-
     </h1>
-
     <table>
+        <caption>
+        População das Unidades Federais
+        </caption>
+
         <thead>
             <tr>
                 <th>Estado</th>
