@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+<style>
+    table{
+        border-collapse: collapse;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+
+    tr,td,th{
+        border: 1px solid black;
+        padding: 10px;
+    }
+
+    thead > tr > th{
+        background-color: gray;
+        color: white;
+        text-align: center;
+        
+    }
+
+    .media, .media-valor {
+        background-color: gray;
+        color: white;
+        text-align: left;
+    }
+
+    .nota-valor{
+        text-align: center;
+    }
+    
+
+</style>
+
+</head>
+<body>
+    <h1>Criando Tabelas</h1>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Área</th>
+                <th rowspan="2">Disciplinas</th>
+                <th colspan="2">Notas</th>
+                <th rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th>Nota1</th>
+                <th>Nota2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4">Exatas</th>
+                <td>Matemática</td>
+                <td class="nota-valor">0,0</td>
+                <td class="nota-valor">0,0</td>
+                <td class="nota-valor">0,0</td>
+            </tr>
+            <tr>
+                <td>Física</td>
+                <td class="nota-valor">0,0</td>
+                <td class="nota-valor">0,0</td>
+                <td class="nota-valor">0,0</td>
+            <tr>
+                <td>Química</td>
+                <td class="nota-valor">0,0</td>
+                <td class="nota-valor">0,0</td>
+                <td class="nota-valor">0,0</td>
+            </tr>
+            <tr>
+                <td>Biologia</td>
+                <td class="nota-valor">0,0</td>
+                <td class="nota-valor">0,0</td>
+                <td class="nota-valor">0,0</td>
+            </tr>
+
+            <tr class="media">
+                <th colspan="4">Média de Exatas</th>
+                <td class="nota-valor">0,0</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Humanas</th>
+                <td>História</td>
+                <td class="nota-valor">0,0</td>
+                <td class="nota-valor">0,0</td>
+                <td class="nota-valor">0,0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td class="nota-valor">0,0</td>
+                <td class="nota-valor">0,0</td>
+                <td class="nota-valor">0,0</td>
+            </tr>
+            <tr class="media-valor">
+                <th colspan="4">Média de Humanas</th>
+                <td class="nota-valor">0,0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
