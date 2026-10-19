@@ -1,19 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
+
 <body>
     <h1>Exemplo de formulário</h1>
-    <form action="cadastro.php">
+    <form action="cadastro.php" method="get" autocomplete="on">
         <fieldset>
             <legend>Sexo</legend>
             <p>
-                <input type="radio" name="sexo" id="isxmas">Masculino</p>
-                <p>
-                <input type="radio" name="sexo" id="isxfem">Feminino
+                <input type="radio" name="sexo" id="isxmas" value="M"><label for="isxmas">Masculino</label>
+            </p>
+            <p>
+                <input type="radio" name="sexo" id="isxfem" value="F"><label for="isxfem">Feminino</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <p>
+                <input type="checkbox" name="esbas" id="iesbas">
+                <label for="iesbas">Basquete
+                </label><br>
+
+                <input type="checkbox" name="esfut" id="iesfut">
+                <label for="iesfut" >Futebol
+                </label><br>
+                
+                <input type="checkbox" name="esvol" id="iesvol"><label for="iesvol">Volei</label><br>
+                
+                <input type="checkbox" name="esten" id="iesten"><label for="iesten">Tênis</label><br>
             </p>
         </fieldset>
         <p>
@@ -22,4 +41,5 @@
         </p>
     </form>
 </body>
+
 </html>
