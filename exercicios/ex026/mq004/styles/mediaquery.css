@@ -5,9 +5,9 @@
 /* TYPICAL DEVICE BREAKPOINTS
 Pequenas telas: até 600px
 Celular: de 600px até 768px
-Tablet: 768px até 992px
-Desktop: 992px até 1200px
-Grandes telas: acima de 1200px
+Tablet: 768px até 1023px
+Desktop: 1028px até 1535px
+Grandes telas: acima de 1536px
 */
 @media print{
     *{
@@ -39,7 +39,7 @@ Grandes telas: acima de 1200px
     img#tv{display: none;}
 }
 
-@media screen and (min-width: 768px) and (max-width: 992px){ /* TABLET */
+@media screen and (min-width: 768px) and (max-width: 1023px){ /* TABLET */
     body{
         background-image: url(../imagens/back-tablet.jpg);
     }
